@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 24, 2025 at 09:21 AM
+-- Generation Time: Apr 24, 2025 at 11:23 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `availability` (
   `Availability_ID` int(11) NOT NULL,
-  `User_ID` int(11) NOT NULL,
+  `User_ID` varchar(10) NOT NULL,
   `Day_of_Week` enum('Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday') NOT NULL,
   `Start_Time` time NOT NULL,
   `End_Time` time NOT NULL,
@@ -65,7 +65,7 @@ ALTER TABLE `availability`
 -- Constraints for table `availability`
 --
 ALTER TABLE `availability`
-  ADD CONSTRAINT `availability_ibfk_1` FOREIGN KEY (`User_ID`) REFERENCES `user` (`User_ID`);
+  ADD CONSTRAINT `fk_availability_userid` FOREIGN KEY (`User_ID`) REFERENCES `user` (`User_ID`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
