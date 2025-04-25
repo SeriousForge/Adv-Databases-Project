@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 24, 2025 at 01:53 AM
+-- Generation Time: Apr 25, 2025 at 02:54 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `menu`
+-- Database: `table_dash_test1`
 --
 
 -- --------------------------------------------------------
@@ -28,51 +28,47 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `menu` (
-  `Menu_ID` int(11) NOT NULL,
+  `menu_ID` varchar(10) NOT NULL,
+  `Restaurant_ID` int(11) NOT NULL,
   `Price` decimal(6,2) NOT NULL,
   `Item` varchar(100) NOT NULL,
   `Description` text DEFAULT NULL,
   `Ingredients` text DEFAULT NULL,
-  `Rating` tinyint(1) DEFAULT NULL,
-  `Type` enum('Entree','Appetizer','Dessert','Drink','Side') NOT NULL
+  `Rating` tinyint(1) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `menu`
 --
 
-INSERT INTO `menu` (`Menu_ID`, `Price`, `Item`, `Description`, `Ingredients`, `Rating`, `Type`) VALUES
-(1, 9.95, 'Philly Cheesesteak', 'Grilled steak with cheese on hoagie roll', 'Steak, Cheese, Onion, Hoagie Roll', 4, 'Entree'),
-(2, 3.50, 'French Fries', 'Crispy golden fries', 'Potatoes, Salt, Oil', 3, 'Side'),
-(3, 4.75, 'Garlic Bread', 'Toasted bread with garlic butter', 'Bread, Garlic, Butter, Parsley', 5, 'Appetizer'),
-(4, 3.99, 'Mashed Potatoes', 'Creamy mashed potatoes with gravy', 'Potatoes, Butter, Milk, Gravy', 4, 'Side'),
-(5, 9.75, 'Chicken Caesar Salad', 'Grilled chicken over romaine with Caesar dressing', 'Chicken, Romaine, Parmesan, Croutons, Dressing', 4, 'Entree'),
-(6, 6.50, 'Chocolate Cake', 'Moist chocolate layer cake', 'Flour, Cocoa, Eggs, Sugar, Frosting', 5, 'Dessert'),
-(7, 12.50, 'Spaghetti Bolognese', 'Pasta with meat sauce', 'Pasta, Tomato Sauce, Ground Beef, Onion, Garlic', 4, 'Entree'),
-(8, 5.99, 'Brownie Sundae', 'Warm brownie topped with ice cream', 'Brownie, Ice Cream, Chocolate Syrup, Whipped Cream', 5, 'Dessert'),
-(9, 6.99, 'Mozzarella Sticks', 'Fried cheese sticks served with marinara', 'Mozzarella, Breadcrumbs, Marinara Sauce', 5, 'Appetizer'),
-(10, 11.25, 'Veggie Pizza', 'Thin-crust pizza loaded with vegetables', 'Dough, Tomato Sauce, Cheese, Peppers, Mushrooms, Onions', 4, 'Entree'),
-(11, 4.25, 'Fruit Cup', 'Seasonal mixed fruits', 'Melon, Pineapple, Grapes, Berries', 3, 'Side'),
-(12, 8.50, 'Beef Burrito', 'Flour tortilla with seasoned beef and beans', 'Beef, Tortilla, Beans, Rice, Cheese', 5, 'Entree'),
-(13, 8.99, 'Cheeseburger', 'Classic burger with cheddar cheese', 'Beef Patty, Bun, Cheese, Lettuce, Tomato, Onion', 5, 'Entree'),
-(14, 10.50, 'Tacos al Pastor', 'Marinated pork tacos with pineapple', 'Pork, Pineapple, Onion, Cilantro, Tortilla', 4, 'Entree'),
-(15, 7.50, 'Garden Salad', 'Fresh mixed greens with vegetables', 'Lettuce, Tomato, Cucumber, Carrots, Dressing', 3, 'Appetizer'),
-(16, 13.25, 'Chicken Alfredo', 'Fettuccine pasta with creamy Alfredo sauce', 'Pasta, Cream, Chicken, Garlic, Parmesan', 5, 'Entree'),
-(17, 14.95, 'Grilled Salmon', 'Salmon filet served with vegetables', 'Salmon, Lemon, Herbs, Broccoli, Carrots', 5, 'Entree'),
-(18, 2.50, 'Iced Tea', 'Chilled brewed tea', 'Water, Tea, Lemon, Sugar', 4, 'Drink'),
-(19, 13.00, 'Shrimp Fried Rice', 'Fried rice with shrimp and vegetables', 'Shrimp, Rice, Eggs, Peas, Carrots, Soy Sauce', 5, 'Entree'),
-(20, 2.00, 'Soda', 'Carbonated soft drink', 'Carbonated Water, Syrup, Flavoring', 4, 'Drink'),
-(21, 6.99, 'Mozzarella Sticks', 'Fried cheese sticks served with marinara', 'Mozzarella, Breadcrumbs, Marinara Sauce', 5, 'Appetizer'),
-(22, 4.75, 'Garlic Bread', 'Toasted bread with garlic butter', 'Bread, Garlic, Butter, Parsley', 4, 'Appetizer'),
-(23, 3.99, 'Mashed Potatoes', 'Creamy mashed potatoes with gravy', 'Potatoes, Butter, Milk, Gravy', 5, 'Side'),
-(24, 5.99, 'Brownie Sundae', 'Warm brownie topped with ice cream', 'Brownie, Ice Cream, Chocolate Syrup, Whipped Cream', 5, 'Dessert'),
-(25, 9.95, 'Philly Cheesesteak', 'Grilled steak with cheese on hoagie roll', 'Steak, Cheese, Onion, Hoagie Roll', 5, 'Entree'),
-(26, 12.50, 'Spaghetti Bolognese', 'Pasta with meat sauce', 'Pasta, Tomato Sauce, Ground Beef, Onion, Garlic', 4, 'Entree'),
-(27, 3.50, 'French Fries', 'Crispy golden fries', 'Potatoes, Salt, Oil', 3, 'Side'),
-(28, 7.50, 'Garden Salad', 'Fresh mixed greens with vegetables', 'Lettuce, Tomato, Cucumber, Carrots, Dressing', 4, 'Appetizer'),
-(29, 2.00, 'Soda', 'Carbonated soft drink', 'Carbonated Water, Syrup, Flavoring', 4, 'Drink'),
-(30, 6.50, 'Chocolate Cake', 'Moist chocolate layer cake', 'Flour, Cocoa, Eggs, Sugar, Frosting', 5, 'Dessert'),
-(31, 11.25, 'Veggie Pizza', 'Thin-crust pizza loaded with vegetables', 'Dough, Tomato Sauce, Cheese, Peppers, Mushrooms, Onions', 5, 'Entree');
+INSERT INTO `menu` (`menu_ID`, `Restaurant_ID`, `Price`, `Item`, `Description`, `Ingredients`, `Rating`) VALUES
+('10001', 1, 9.99, 'Sunny Side Breakfast', 'Classic sunny‑side‑up eggs with toast, bacon, and hashbrowns.', 'Eggs, toast, bacon, hashbrowns', 5),
+('10002', 1, 7.99, 'Pancakes', 'Fluffy pancakes with maple syrup and berries.', 'Flour, eggs, milk, maple syrup, berries', 5),
+('10003', 1, 8.49, 'Veggie Omelette', 'Omelette filled with fresh veggies and cheese, served with toast.', 'Eggs, cheese, vegetables, toast', 5),
+('10004', 1, 8.99, 'Bacon & Eggs', 'Crispy bacon, fried eggs, and hashbrowns.', 'Bacon, eggs, hashbrowns', 5),
+('10005', 1, 6.99, 'French Toast', 'Golden French toast with powdered sugar and syrup.', 'Bread, eggs, milk, sugar, syrup', 5),
+('10006', 1, 5.99, 'Mango Smoothie', 'Fresh mango smoothie with a touch of honey.', 'Mango, honey, yogurt', 5),
+('10007', 1, 4.49, 'Iced Coffee', 'Brewed coffee over ice with a splash of cream.', 'Coffee, cream, ice', 4),
+('10008', 1, 6.99, 'Fruit Salad', 'Seasonal fruit mix with honey‑lime dressing.', 'Seasonal fruits, honey, lime', 5),
+('10009', 1, 4.99, 'Cinnamon Roll', 'Warm cinnamon roll with cream‑cheese frosting.', 'Flour, cinnamon, sugar, butter, cream cheese', 5),
+('20001', 2, 12.99, 'Spaghetti Carbonara', 'Creamy egg sauce, pancetta, parmesan.', 'Spaghetti, eggs, pancetta, parmesan', 5),
+('20002', 2, 13.49, 'Fettuccine Alfredo', 'Rich butter‑cream sauce with parmesan.', 'Fettuccine, cream, butter, parmesan', 5),
+('20003', 2, 10.99, 'Margherita Pizza', 'Tomato, mozzarella, fresh basil.', 'Flour, tomatoes, mozzarella, basil', 5),
+('20004', 2, 10.49, 'Penne Arrabbiata', 'Spicy tomato sauce with garlic & chili.', 'Penne,tomato,garlic,chili', 4),
+('20005', 2, 14.49, 'Lasagna', 'Layers of pasta, beef ragù & béchamel.', 'Pasta,beef,tomato,cheese', 5),
+('20006', 2, 12.99, 'Pesto Genovese', 'Basil‑pine‑nut pesto tossed with linguine.', 'Linguine,basil,pine‑nuts,parmesan', 5),
+('20007', 2, 12.49, 'Gnocchi al Pesto', 'Potato gnocchi in creamy pesto.', 'Gnocchi,basil,cream,parmesan', 5),
+('20008', 2, 6.49, 'Tiramisu', 'Classic espresso‑soaked ladyfingers & mascarpone.', 'Ladyfingers,espresso,mascarpone', 5),
+('20009', 2, 5.99, 'Gelato Trio', 'Three‑flavor Italian gelato sampler.', 'Milk,sugar,flavorings', 5),
+('30001', 3, 9.99, 'Classic Barn Burger', 'Beef patty, cheddar, lettuce, tomato.', 'Beef, cheddar, bun, lettuce, tomato', 5),
+('30002', 3, 11.49, 'BBQ Bacon Burger', 'Smoked bacon, BBQ sauce, crispy onions.', 'Beef, bacon, BBQ sauce, onions', 5),
+('30003', 3, 10.49, 'Veggie Barn Burger', 'Plant‑based patty with avocado and sprouts.', 'Veggie patty, avocado, sprouts, bun', 4),
+('30004', 3, 3.99, 'Sweet Potato Fries', 'Crispy sweet‑potato fries with chipotle mayo.', 'Sweet potatoes, oil, chipotle mayo', 5),
+('30005', 3, 10.49, 'Chicken Ranch Burger', 'Grilled chicken, ranch, lettuce, tomato.', 'Chicken,bun,ranch,lettuce,tomato', 5),
+('30006', 3, 12.49, 'Triple Cheese Burger', 'Cheddar, Swiss, American, special sauce.', 'Beef,3‑cheeses,bun,sauce', 5),
+('30007', 3, 3.99, 'Onion Rings', 'Beer‑battered onion rings with BBQ dip.', 'Onions,batter,oil', 4),
+('30008', 3, 4.99, 'Chocolate Milkshake', 'Thick chocolate malt shake w/ whipped cream.', 'Ice‑cream,milk,chocolate', 5),
+('30009', 3, 5.49, 'Apple Pie', 'Warm apple pie slice with caramel drizzle.', 'Apples,crust,cinnamon,caramel', 5);
 
 --
 -- Indexes for dumped tables
@@ -82,17 +78,7 @@ INSERT INTO `menu` (`Menu_ID`, `Price`, `Item`, `Description`, `Ingredients`, `R
 -- Indexes for table `menu`
 --
 ALTER TABLE `menu`
-  ADD PRIMARY KEY (`Menu_ID`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `menu`
---
-ALTER TABLE `menu`
-  MODIFY `Menu_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+  ADD PRIMARY KEY (`menu_ID`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
