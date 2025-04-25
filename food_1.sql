@@ -97,7 +97,7 @@ INSERT INTO `food` (`Item_ID`, `Item_Name`, `Calories`, `Type`) VALUES
 (60006, 'Gelato',500,'Dessert'),
 (60007,'Tour Of Italy',1300,'Main')
 (60008,'Tomato Soup',200,'Side'),
-(60009,'',1000,'Main'),
+(60009,'Chicken Parmasan',1000,'Main'),
 
 (70001, 'Kung Pao Chicken', 450, 'Chinese'),
 (70002, 'Spring Rolls', 200, 'Chinese'),
