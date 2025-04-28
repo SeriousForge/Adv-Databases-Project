@@ -99,7 +99,18 @@ INSERT INTO `user` (`User_ID`, `User_Email`, `User_Password`, `User_Name`, `User
 ('D0057', 'megan.turner@email.com', 'defaultpassword', 'Megan Turner', 'driver'),
 ('D0058', 'noah.martinez@email.com', 'defaultpassword', 'Noah Martinez', 'driver'),
 ('D0059', 'lily.brown@email.com', 'defaultpassword', 'Lily Brown', 'driver'),
-('D0060', 'elijah.robinson@email.com', 'defaultpassword', 'Elijah Robinson', 'driver');
+('D0060', 'elijah.robinson@email.com', 'defaultpassword', 'Elijah Robinson', 'driver'),
+
+('R0061', 'ihop@email.com', 'defaultpassword', 'IHOP', 'business'),
+('R0062', 'olivegarden@email.com', 'defaultpassword', 'Olive Garden', 'business'),
+('R0063', 'rusticranch@email.com', 'defaultpassword', 'Rustic Ranch', 'business'),
+('R0064', 'fiesta@email.com', 'defaultpassword', 'Fiesta', 'business'),
+('R0065', 'kfc@email.com', 'defaultpassword', 'KFC', 'business'),
+('R0066', 'felice@email.com', 'defaultpassword', 'Felice', 'business'),
+('R0067', 'quickwok@email.com', 'defaultpassword', 'Quick Wok', 'business'),
+('R0068', 'hayashi@email.com', 'defaultpassword', 'Hayashi', 'business'),
+('R0069', 'whataburger@email.com', 'defaultpassword', 'Whataburger', 'business'),
+('R0070', 'pandaexpress@email.com', 'defaultpassword', 'Panda Express', 'business');
 
 --
 -- Indexes for dumped tables
