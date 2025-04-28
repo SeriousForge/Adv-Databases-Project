@@ -105,16 +105,17 @@ INSERT INTO `address` (`Address_ID`, `Street_Address`, `Suite_Number`, `Gate_Num
 (59, '2626 Cedar St', 'Apt 1313', NULL, 'Donna', 'Texas', '78537', 'D0059', 'home'),
 (60, '2727 Maple St', NULL, NULL, 'McAllen', 'Texas', '78501', 'D0060', 'home'),
 
-(61, '1818 Cedar St', NULL, NULL, 'Edinburg', 'Texas', '73504', '0051', 'buisness'),
-(62, '1919 Walnut St', NULL, 'Gate 3', 'Pharr', 'Texas', '78577', 'D0052', 'buisness'),
-(63, '2020 Oak St', 'Suite 1010', NULL, 'Mission', 'Texas', '78572', 'D0053', 'buisness'),
-(64, '2121 Birch St', NULL, NULL, 'Donna', 'Texas', '78537', 'D0054', 'buisness'),
-(65, '2222 Cedar St', 'Apt 1111', NULL, 'McAllen', 'Texas', '78501', 'D0055', 'buisness'),
-(66, '2323 Maple St', NULL, NULL, 'Edinburg', 'Texas', '73504', 'D0056', 'buisness'),
-(67, '2424 Oak St', 'Suite 1212', NULL, 'Pharr', 'Texas', '78577', 'D0057', 'buisness'),
-(68, '2525 Birch St', NULL, NULL, 'Mission', 'Texas', '78572', 'D0058', 'buisness'),
-(69, '2626 Cedar St', 'Apt 1313', NULL, 'Donna', 'Texas', '78537', 'D0059', 'buisness'),
-(70, '2727 Maple St', NULL, NULL, 'McAllen', 'Texas', '78501', 'D0060', 'buisness');
+(61, '1818 Cypress Ave', NULL, NULL, 'Edinburg', 'Texas', '73504', 'R0061', 'buisness'),
+(62, '1919 Magnolia Blvd', NULL, 'Dock B', 'Pharr', 'Texas', '78577', 'R0062', 'buisness'),
+(63, '2020 Willow Rd', 'Suite 202', NULL, 'Mission', 'Texas', '78572', 'R0063', 'buisness'),
+(64, '2121 Aspen Ct', NULL, NULL, 'Donna', 'Texas', '78537', 'R0064', 'buisness'),
+(65, '2222 Redwood St', NULL, 'Gate 5', 'McAllen', 'Texas', '78501', 'R0065', 'buisness'),
+(66, '2323 Poplar Ln', 'Unit 303', NULL, 'Edinburg', 'Texas', '73504', 'R0066', 'buisness'),
+(67, '2424 Sycamore Dr', NULL, NULL, 'Pharr', 'Texas', '78577', 'R0067', 'buisness'),
+(68, '2525 Chestnut Pl', NULL, 'Building C', 'Mission', 'Texas', '78572', 'R0068', 'buisness'),
+(69, '2626 Dogwood Way', 'Apt 404', NULL, 'Donna', 'Texas', '78537', 'R0069', 'buisness'),
+(70, '2727 Hickory St', NULL, NULL, 'McAllen', 'Texas', '78501', 'R0070', 'buisness');
+
 
 --
 -- Indexes for dumped tables
