@@ -103,7 +103,18 @@ INSERT INTO `address` (`Address_ID`, `Street_Address`, `Suite_Number`, `Gate_Num
 (57, '2424 Oak St', 'Suite 1212', NULL, 'Pharr', 'Texas', '78577', 'D0057', 'home'),
 (58, '2525 Birch St', NULL, NULL, 'Mission', 'Texas', '78572', 'D0058', 'home'),
 (59, '2626 Cedar St', 'Apt 1313', NULL, 'Donna', 'Texas', '78537', 'D0059', 'home'),
-(60, '2727 Maple St', NULL, NULL, 'McAllen', 'Texas', '78501', 'D0060', 'home');
+(60, '2727 Maple St', NULL, NULL, 'McAllen', 'Texas', '78501', 'D0060', 'home'),
+
+(61, '1818 Cedar St', NULL, NULL, 'Edinburg', 'Texas', '73504', '0051', 'buisness'),
+(62, '1919 Walnut St', NULL, 'Gate 3', 'Pharr', 'Texas', '78577', 'D0052', 'buisness'),
+(63, '2020 Oak St', 'Suite 1010', NULL, 'Mission', 'Texas', '78572', 'D0053', 'buisness'),
+(64, '2121 Birch St', NULL, NULL, 'Donna', 'Texas', '78537', 'D0054', 'buisness'),
+(65, '2222 Cedar St', 'Apt 1111', NULL, 'McAllen', 'Texas', '78501', 'D0055', 'buisness'),
+(66, '2323 Maple St', NULL, NULL, 'Edinburg', 'Texas', '73504', 'D0056', 'buisness'),
+(67, '2424 Oak St', 'Suite 1212', NULL, 'Pharr', 'Texas', '78577', 'D0057', 'buisness'),
+(68, '2525 Birch St', NULL, NULL, 'Mission', 'Texas', '78572', 'D0058', 'buisness'),
+(69, '2626 Cedar St', 'Apt 1313', NULL, 'Donna', 'Texas', '78537', 'D0059', 'buisness'),
+(70, '2727 Maple St', NULL, NULL, 'McAllen', 'Texas', '78501', 'D0060', 'buisness');
 
 --
 -- Indexes for dumped tables
