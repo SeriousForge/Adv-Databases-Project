@@ -1,0 +1,3 @@
+[submodule "Python TableDash Application/Python-TableDash-Application"]
+	path = Python TableDash Application/Python-TableDash-Application
+	url = https://github.com/SeriousForge/Python-TableDash-Application.git
